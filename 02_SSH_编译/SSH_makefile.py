@@ -14,8 +14,8 @@ def ssh_command(ip, port, username, password, remote_filepath, local_filepath):
 
     # 执行命令
     shell = client.invoke_shell()
-    command_list = ['su root', 'dtw@123', 'pip uninstall liteapi', 'y', 'pip install git+http://192.168.29.134:8084/jking.wang/liteapi.git', 'Jking.wang', 'J.k1234567', 'cd GNSS/tapp','pyinstaller -F tapp_v5_20230725.py']
-    receipt_list = ['Password', 'root@ubuntu:/home/ubuntu#', 'Proceed (y/n)?', 'Successfully uninstalled liteapi', "Username for 'http://192.168.29.134:8084'", "Password for 'http://Jking.wang@192.168.29.134:8084'",'Successfully installed liteapi', 'root@ubuntu:/home/ubuntu/GNSS/tapp#','Building EXE from EXE-00.toc completed successfully.']
+    command_list = ['su root', 'password', 'pip uninstall liteapi', 'y', 'pip install git+http://xxx.xxx.xx.134:8084/jking.wang/liteapi.git', 'name', 'passward', 'cd GNSS/tapp','pyinstaller -F tapp_v5_20230725.py']
+    receipt_list = ['Password', 'root@ubuntu:/home/ubuntu#', 'Proceed (y/n)?', 'Successfully uninstalled liteapi', "Username for 'http://192.168.29.134:8084'", "Password for 'http://Jking.wang@xxx.xxx.xx.134:8084'",'Successfully installed liteapi', 'root@ubuntu:/home/ubuntu/GNSS/tapp#','Building EXE from EXE-00.toc completed successfully.']
     unintstall_status = False
 
     for n, command in enumerate(command_list):
@@ -46,10 +46,10 @@ def ssh_command(ip, port, username, password, remote_filepath, local_filepath):
 def main():
     try:
         # 树莓派的 IP 地址、端口、用户名和密码
-        ip = '10.66.35.16'
+        ip = 'xx.xx.xx.xx'
         port = 22  # SSH 端口通常是 22
-        username = 'ubuntu'
-        password = 'dtw@123'
+        username = 'xxxxx'
+        password = 'xxxxx'
         nt = datetime.now().strftime('%Y%m%d')
 
         # 要下载的文件路径
