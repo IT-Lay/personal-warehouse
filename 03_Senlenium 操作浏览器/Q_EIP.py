@@ -40,9 +40,9 @@ def job_eip():
         # 找到登录按钮
         submit_btn = driver.find_element(By.ID, "btnSubmit")
         # 输入账号
-        usr_name.send_keys('Lay.zhang@quectel.com')
+        usr_name.send_keys('xx.xxx@quectel.com')
         # 输入密码
-        psw.send_keys('Zhang@8520')
+        psw.send_keys('xxxxxx')
         # 点击登录按钮
         time.sleep(0.1)
         submit_btn.click()
