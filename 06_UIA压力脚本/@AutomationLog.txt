@@ -1,0 +1,1 @@
+2024-04-08 11:29:43.407 LC760Z_Download.py[46] click_device_menu -> Find Control Timeout(10s): {ClassName: 'QLineEdit', Name: '', ControlType: EditControl}
